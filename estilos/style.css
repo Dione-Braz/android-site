@@ -25,6 +25,10 @@ body {
     background-color: #C685FF;
 }
 
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, #8A16F0, #5A07A3);
     color: white;
@@ -74,11 +78,14 @@ main {
     box-shadow: 0px 3px 15px #000000ab;
 }
 
-main  p > a {
+main > article > p a {
+    background: #C685FF;
+    color: purple;
+    padding: 2px 3px;
     text-decoration: none;
 }
 
-main p > a:hover {
+main > article > p a:hover {
     text-decoration: underline;
     color: rgba(32, 32, 253, 0.938);
     border-radius: 5px;
@@ -117,30 +124,25 @@ main img.bugdroid {
     margin: auto;
 }
 
-main .video {
-    background-color: #5A07A3;
-    height: 315px;
-    padding: 15px;
-}
-
 aside {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.233);
     background-color: lightgray;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 aside > h3 {
-    background-color: gray;
     padding: 5px;
+    margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-    margin-bottom: 15px;
+    background: #5A07A3;
+    color: #fff;
 }
 
-aside > p {
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1.5em;
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {

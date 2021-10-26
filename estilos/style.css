@@ -93,7 +93,7 @@ main > article > p a:hover {
 
 main h1 {
     color: purple;
-    font-weight: bold;
+    font-weight: normal;
     font-family: var(--fonte-android);
     font-size: 2em;
 }
@@ -110,7 +110,7 @@ main h2 {
     margin-bottom: 7px;
     background-image: linear-gradient(to right, #C685FF, transparent);
     color: purple;
-    font-weight: bolder;
+    font-weight: normal;
     font-family: var(--fonte-android);
 }
 
@@ -122,6 +122,22 @@ main img.bugdroid {
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+.video {
+    background: #5A07A3;
+    margin: 0px -20px 25px -20px;
+    padding: 15px 20px;
+    position: relative;
+    padding-bottom: 58%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {

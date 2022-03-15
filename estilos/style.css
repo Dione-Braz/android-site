@@ -16,8 +16,9 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family:var(--fonte-padrao);
 }
 
@@ -25,49 +26,41 @@ body {
     background-color: #C685FF;
 }
 
-a.externo::after {
-    content: '\00A0\1F517';
-}
-
 header {
-    background-image: linear-gradient(to bottom, #8A16F0, #5A07A3);
-    color: white;
     height: 150px;
-}
-
-header > h1 {
-    text-align: center;
-    font-family: var(--fonte-header);
-    font-size: 3em;
-    padding-top: 30px;
-    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-header > p {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    margin-top: 15px;
-}
-
-nav {
-    background-color: #5A07A3;
-    bottom: 0px;
-    padding-bottom: 10px;
-}
-
-nav > a {
+    width: 100%;
     color: white;
-    text-decoration: none;
-    margin: 5px;
-    font-weight: bold;
-    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to bottom, #8A16F0, #5A07A3);
 }
 
-nav > a:hover {
-    background-color: blueviolet;
-    border-radius: 5px;
-    transition-duration: 0.5s;
+div.container-text-header {
+    text-align: center;
+}
+
+div.container-text-header h1 {
+    font-family: var(--fonte-header);
+    font-size: 3rem;
+}
+
+div.container-text-header p {
+    width: 50%;
+    margin: 0 auto;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===============>> MOBILE VERSION <<=============== */
+
+
+
+/* ===================>> MAIN <<================= */
+
+a.externo::after {
+content: '\00A0\1F517';
 }
 
 main {

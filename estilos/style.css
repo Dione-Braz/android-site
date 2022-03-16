@@ -150,6 +150,14 @@ aside > ul {
     columns: 2;
 }
 
+span.scrollToTop img {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    fill: #5A07A3;
+}
+
 footer {
     background-color: #5A07A3;
     color: white;

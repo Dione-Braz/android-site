@@ -53,10 +53,6 @@ div.container-text-header p {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* ===============>> MOBILE VERSION <<=============== */
-
-
-
 /* ===================>> MAIN <<================= */
 
 a.externo::after {
@@ -88,7 +84,7 @@ main h1 {
     color: purple;
     font-weight: normal;
     font-family: var(--fonte-android);
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 main p {
@@ -134,7 +130,7 @@ main img.bugdroid {
 }
 
 aside {
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.233);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.233);
     background-color: lightgray;
     padding: 10px;
     border-radius: 10px;
@@ -159,4 +155,36 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+
+/* ================>> HEADER <<================== */
+
+    div.container-text-header h1 {
+        font-size: 1.75rem;
+    }
+
+    div.container-text-header p {
+        font-size: 0.75rem;
+    }
+
+    /* ================>> MAIN <<================== */
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: 0.5rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
 }

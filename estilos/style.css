@@ -174,17 +174,23 @@ footer {
     main {
         width: 100%;
         margin: 0;
+        border-radius: 0;
     }
 
     main h1 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     main p {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
     main h2 {
         font-size: 1rem;
+    }
+
+    p.down-aside {
+        margin-top: 30px;
+        text-align: center;
     }
 }

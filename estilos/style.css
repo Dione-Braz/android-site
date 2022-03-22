@@ -155,14 +155,30 @@ span.scrollToTop img {
     right: 10px;
     bottom: 10px;
     width: 30px;
-    fill: #5A07A3;
+    border-radius: 50%;
+    background-color: #5A07A3;
+    animation: animate 1.6s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(6px);
+      }
+      100% {
+          transform: translateY(0px);
+      }
 }
 
 footer {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #5A07A3;
     color: white;
-    padding: 10px;
-    text-align: center;
 }
 
 @media (max-width: 600px) {
